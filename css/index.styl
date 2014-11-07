@@ -5,15 +5,43 @@ body
 	background gris_claro
 	font-family arial-regular
 	font-size 14px
-	
+
 header
 	background gris_oscuro
 	color gris_claro
 	font-family arial-bold
 	padding 0.1em
-	#titulo
+	position relative
+	.titulo
 		font-size 24px
 		text-align center
-	#menu
-		display inline-block	
-		
+
+nav
+	background gris_oscuro
+	color gris_claro
+	position relative
+	.menu
+		margin 0
+		overflow-x auto
+		padding 0
+		white-space nowrap
+		li
+			display inline-block
+			float left
+			padding 5px
+		li#cerrar_sesion
+			float right
+
+footer
+	background gris_oscuro
+	color gris_claro
+	position relative
+	.redes_sociales
+		margin 0
+		overflow-x auto
+		padding 0
+		white-space nowrap
+		li
+			float right
+			display inline-block
+			padding 5px
