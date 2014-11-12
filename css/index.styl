@@ -1,6 +1,10 @@
 gris_claro=#dddddc
 gris_oscuro=#30302f
 
+a
+	color gris_claro
+	text-decoration none
+
 body
 	background gris_claro
 	font-family arial-regular
@@ -11,37 +15,62 @@ header
 	color gris_claro
 	font-family arial-bold
 	padding 0.1em
-	position relative
+	//position relative
 	.titulo
 		font-size 24px
 		text-align center
 
 nav
-	background gris_oscuro
+	background green
 	color gris_claro
-	position relative
+	font-family arial-regular
+	font-size 14px
+	//position relative
+	//display inline-block
 	.menu
+		// las siguientes 2 líneas fijan el menu (colocan un scroll)
+		//height 35px
+		//line-height 35px
+		display inline-block
 		margin 0
-		overflow-x auto
 		padding 0
-		white-space nowrap
+		overflow-x auto
+		//white-space nowrap
+		//float left
+		//position relative
 		li
 			display inline-block
-			float left
-			padding 5px
-		li#cerrar_sesion
-			float right
+			padding 0.5em
+	.cerrar_sesion
+		//background red
+		display inline-block
+		overflow-x auto
+		margin 0
+		padding 0
+		//white-space nowrap
+		float right
+		//position relative
+		li
+			display inline-block
+			padding 0.5em
+	
+.contenido
+	background blue
+	//position relative
 
 footer
 	background gris_oscuro
 	color gris_claro
-	position relative
+	font-family arial-regular
+	font-size 14px
+	//position relative
 	.redes_sociales
 		margin 0
 		overflow-x auto
 		padding 0
-		white-space nowrap
+		//white-space nowrap
 		li
 			float right
 			display inline-block
-			padding 5px
+			padding 0.5em
+
