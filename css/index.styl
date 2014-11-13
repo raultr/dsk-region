@@ -1,9 +1,24 @@
 gris_claro=#dddddc
 gris_oscuro=#30302f
+rosa=#df7250
+ico_font_family="iconos"
+ico_personal="\e607"
+ico_empresas="\e606"
+ico_catalogos="\e600"
+ico_cerrar_sesion="\e609"
+ico_e-mail="\e601"
+ico_facebook="\e605"
+ico_twitter="\e60c"
 
-a
-	color gris_claro
-	text-decoration none
+@font-face
+	font-family "iconos"
+	src url("../fonts/icomoon.eot?lqw3j3")
+	src url("../fonts/icomoon.eot?#iefixlqw3j3") format("embedded-opentype"),
+		url("../fonts/icomoon.woff?lqw3j3") format("woff"),
+		url("../fonts/icomoon.ttf?lqw3j3") format("truetype"),
+		url("../fonts/icomoon.svg?lqw3j3#icomoon") format("svg")
+	font-weight normal
+	font-style normal
 
 body
 	background gris_claro
@@ -21,7 +36,7 @@ header
 		text-align center
 
 nav
-	background green
+	background gris_oscuro
 	color gris_claro
 	font-family arial-regular
 	font-size 14px
@@ -41,23 +56,55 @@ nav
 		li
 			display inline-block
 			padding 0.5em
+			a
+				color gris_claro
+				text-decoration none
+				font-size 70px
+			a.personal
+				&:before
+					//text-shadow 8px 8px rosa
+					//box-shadow 2px 2px 10px rosa
+					border-style solid
+					border-color rosa
+					border-radius 10px
+					border-width 2px
+					font-family ico_font_family
+					content ico_personal
+			a.empresas
+				&:before
+					border-style solid
+					border-color rosa
+					border-radius 10px
+					border-width 2px
+					font-family ico_font_family
+					content ico_empresas
+			a.catalogos
+				&:before
+					border-style solid
+					border-color rosa
+					border-radius 10px
+					border-width 2px
+					font-family ico_font_family
+					content ico_catalogos
+
 	.cerrar_sesion
-		//background red
 		display inline-block
 		overflow-x auto
 		margin 0
 		padding 0
-		//white-space nowrap
 		float right
-		//position relative
 		li
 			display inline-block
 			padding 0.5em
+			a
+				color rosa
+				font-size 40px
+				text-decoration none
+			a.cerrar_sesion
+				&:before
+					font-family ico_font_family
+					content ico_cerrar_sesion
 	
-.contenido
-	background blue
-	//position relative
-
 footer
 	background gris_oscuro
 	color gris_claro
@@ -72,5 +119,20 @@ footer
 		li
 			float right
 			display inline-block
-			padding 0.5em
-
+			padding 0.8em
+			a
+				color gris_claro
+				font-size 20px
+				text-decoration none
+			a.e-mail
+				&:before
+					font-family ico_font_family
+					content ico_e-mail
+			a.facebook
+				&:before
+					font-family ico_font_family
+					content ico_facebook
+			a.twitter
+				&:before
+					font-family ico_font_family
+					content ico_twitter
