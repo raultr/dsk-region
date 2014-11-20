@@ -21,25 +21,31 @@ ico_twitter="\e60c"
 	font-style normal
 
 body
-	background gris_claro
+	background -moz-linear-gradient(top,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%) /* FF3.6+ */
+	background -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0))) /* Chrome,Safari4+ */
+	background -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%) /* Chrome10+,Safari5.1+ */
+	background -o-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%) /* Opera 11.10+ */
+	background -ms-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%) /* IE10+ */
+	background linear-gradient(to bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%) /* W3C */
 	font-family arial-regular
 	font-size 14px
 
 header
 	background gris_oscuro
-	color gris_claro
-	font-family arial-bold
-	padding 0.1em
-	//position relative
+	//padding 0.1em
+	//height 10em
 	.titulo
+		color gris_claro
+		font-family arial-bold
 		font-size 24px
 		text-align center
-
+		padding 0.5em
+		overflow-x auto
 nav
 	background gris_oscuro
-	color gris_claro
-	font-family arial-regular
-	font-size 14px
+	//color gris_claro
+	//font-family arial-regular
+	//font-size 14px
 	//position relative
 	//display inline-block
 	.menu
@@ -59,7 +65,6 @@ nav
 			a
 				color gris_claro
 				text-decoration none
-				font-size 70px
 			a.personal
 				&:before
 					//text-shadow 8px 8px rosa
@@ -69,6 +74,7 @@ nav
 					border-radius 10px
 					border-width 2px
 					font-family ico_font_family
+					font-size 80px
 					content ico_personal
 			a.empresas
 				&:before
@@ -77,6 +83,7 @@ nav
 					border-radius 10px
 					border-width 2px
 					font-family ico_font_family
+					font-size 80px
 					content ico_empresas
 			a.catalogos
 				&:before
@@ -85,12 +92,13 @@ nav
 					border-radius 10px
 					border-width 2px
 					font-family ico_font_family
+					font-size 80px
 					content ico_catalogos
 
 	.cerrar_sesion
 		display inline-block
 		overflow-x auto
-		margin 0
+		margin-top 1.4em
 		padding 0
 		float right
 		li
@@ -98,18 +106,18 @@ nav
 			padding 0.5em
 			a
 				color rosa
-				font-size 40px
 				text-decoration none
 			a.cerrar_sesion
 				&:before
 					font-family ico_font_family
+					font-size 40px
 					content ico_cerrar_sesion
 	
 footer
 	background gris_oscuro
-	color gris_claro
-	font-family arial-regular
-	font-size 14px
+	//color gris_claro
+	//font-family arial-regular
+	//font-size 14px
 	//position relative
 	.redes_sociales
 		margin 0
@@ -119,7 +127,7 @@ footer
 		li
 			float right
 			display inline-block
-			padding 0.8em
+			padding 0.5em
 			a
 				color gris_claro
 				font-size 20px
