@@ -1,6 +1,8 @@
 gris_claro=#dddddc
 gris_oscuro=#30302f
+gris_medio=#696868
 rosa=#df7250
+verde=#1cb28c
 ico_font_family="iconos"
 ico_personal="\e607"
 ico_empresas="\e606"
@@ -41,6 +43,7 @@ header
 		text-align center
 		padding 0.5em
 		overflow-x auto
+
 nav
 	background gris_oscuro
 	//color gris_claro
@@ -112,6 +115,46 @@ nav
 					font-family ico_font_family
 					font-size 40px
 					content ico_cerrar_sesion
+
+.contenido
+	padding 0.5em
+	.bloque
+		display inline-block
+		width 30%
+		vertical-align top
+		margin-right 2%
+		.titulo_bloque
+			background verde
+			color white
+			font-family arial-regular
+			font-size 18px
+			text-align center
+		.caja_bloque
+			background gris_medio
+			.campos_bloque
+				.ul_bloque
+					width 800px
+					list-style-type none
+					//list-style-position outside
+					margin 0
+					padding 0.1em
+					.li_bloque
+						color gris_claro
+						font-family arial-regular
+						font-size 14px
+						padding 0.2em
+						//border-bottom 2px solid #eee
+						//position relative
+						.etiquetas_bloque
+							width 150px
+							margin-top 2px
+							display inline-block
+							float left
+							padding 2px
+						.inputs_bloque
+							height 16px
+							width 220px
+							padding 2px 8px
 	
 footer
 	background gris_oscuro
