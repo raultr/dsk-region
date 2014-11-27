@@ -3,6 +3,10 @@ gris_oscuro=#30302f
 gris_medio=#696868
 rosa=#df7250
 verde=#1cb28c
+verde_rgb=rgb(28,178,140)
+gris_claro_rgb_1=rgb(192,192,192)
+gris_claro_rgb_2=rgb(224,224,224)
+gris_claro_rgb_3=rgb(240,240,240)
 ico_font_family="iconos"
 ico_personal="\e607"
 ico_empresas="\e606"
@@ -152,10 +156,81 @@ nav
 							float left
 							padding 2px
 						.inputs_bloque
+							color black
 							height 16px
 							width 220px
 							padding 2px 8px
-	
+							border 1px solid verde
+							box-shadow 0px 0px 1px verde, 0 10px 15px gris_claro inset
+							border-radius 1px
+							&:focus
+								border 2px solid rosa
+								//padding-right 70px
+						.textarea_bloque
+							color black
+							height 80px
+							width 220px
+							resize vertical
+							padding 2px 8px
+							border 1px solid verde
+							box-shadow 0px 0px 1px verde, 0 10px 15px gris_claro inset
+							border-radius 1px
+							&:focus
+								border 2px solid rosa
+						.select_bloque
+							color black
+							height 22px
+							width 238px
+							padding 2px 8px
+							border 1px solid verde
+							box-shadow 0px 0px 1px verde, 0 10px 15px gris_claro inset
+							border-radius 1px
+							&:focus
+								border 2px solid rosa
+						.radio_bloque:not(old)
+							width 2em
+							margin 0
+							padding 0
+							font-size 1em
+							opacity 0
+							&:not(old) + label
+								display inline-block
+								margin-left -2em
+								line-height 1.5em
+							&:not(old) + label > span
+								display inline-block
+								width 0.875em
+								height 0.875em
+								margin 0.25em 0.5em 0.25em 0.25em
+								border 0.0625em solid gris_claro_rgb_1
+								border-radius 0.25em
+								background gris_claro_rgb_2
+								background-image -moz-linear-gradient(gris_claro_rgb_3,gris_claro_rgb_2)
+								background-image -ms-linear-gradient(gris_claro_rgb_3,gris_claro_rgb_2)
+								background-image -o-linear-gradient(gris_claro_rgb_3,gris_claro_rgb_2)
+								background-image -webkit-linear-gradient(gris_claro_rgb_3,gris_claro_rgb_2)
+								background-image linear-gradient(gris_claro_rgb_3,gris_claro_rgb_2)
+								vertical-align bottom
+							&:not(old):checked + label > span
+								background-image -moz-linear-gradient(gris_claro_rgb_2,gris_claro_rgb_3)
+								background-image -ms-linear-gradient(gris_claro_rgb_2,gris_claro_rgb_3)
+								background-image -o-linear-gradient(gris_claro_rgb_2,gris_claro_rgb_3)
+								background-image -webkit-linear-gradient(gris_claro_rgb_2,gris_claro_rgb_3)
+								background-image linear-gradient(gris_claro_rgb_2,gris_claro_rgb_3)
+							&:not(old):checked +  label > span > span
+								display block
+								width 0.5em
+								height 0.5em
+								margin 0.125em
+								border 0.0625em solid verde_rgb
+								border-radius 0.125em
+								background verde_rgb
+								background-image -moz-linear-gradient(verde_rgb,verde_rgb)
+								background-image -ms-linear-gradient(verde_rgb,verde_rgb)
+								background-image -o-linear-gradient(verde_rgb,verde_rgb)
+								background-image -webkit-linear-gradient(verde_rgb,verde_rgb)
+								background-image linear-gradient(verde_rgb,verde_rgb)
+
 footer
 	background gris_oscuro
 	//color gris_claro
