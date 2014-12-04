@@ -30,6 +30,15 @@
 			<li><a class="cerrar_sesion" href="#"></a></li>
 		</ul>
 	</nav>
+	<div class="caja_acciones">
+		<ul class="menu_acciones">
+			<li><a href="#" class="nuevo"></a></li>
+			<li><a href="#" class="eliminar"></a></li>
+			<li><a href="#" class="guardar"></a></li>
+			<li><input type="text" placeholder="Buscar" class="buscar"/></li>
+		</ul>
+		<hr>
+	</div>
 	<section class="contenido">
 		<article class="bloque">
 			<div class="titulo_bloque">
@@ -157,7 +166,7 @@
 						</li>
 						<li class="li_bloque">
 							<label class="etiquetas_bloque" for="alta_condicionada"></label>
-							<textarea class="textarea_bloque" name="condicion_alta"></textarea>
+							<textarea class="textarea_bloque" name="condicion_alta" placeholder="Condición(es)"></textarea>
 						</li>
 						<li class="li_bloque">
 							<label class="etiquetas_bloque" for="tipo_de_empleado">Tipo de Empleado</label>
@@ -169,21 +178,56 @@
 					</ul>
 				</div>
 			</div>
-
+			<br>
 			<div class="titulo_bloque">
 				Domicilio
 			</div>
 			<div class="caja_bloque">
-				Campos
+				<div class="campos_bloque">
+					<ul class="ul_bloque">
+						<li class="li_bloque">
+							<label class="etiquetas_bloque" for="calle">Calle</label>
+							<textarea class="textarea_bloque" name="calle" placeholder="Calle"></textarea>
+						</li>
+						<li class="li_bloque">
+							<label class="etiquetas_bloque" for="numero">Número</label>
+							<input class="inputs_bloque" type="text" placeholder="Número" />
+						</li>
+						<li class="li_bloque">
+							<label class="etiquetas_bloque" for="codigo_postal">Código Postal</label>
+							<input class="inputs_bloque" type="text" placeholder="Código Postal" />
+						</li>
+						<li class="li_bloque">
+							<label class="etiquetas_bloque" for="calle_estado">Estado</label>
+							<select name="calle_estado" class="select_bloque">
+								<option value="estado_de_mexico">Estado de México</option>
+								<option value="distrito_federal">Distrito Federal</option>
+							</select>
+						</li>
+						<li class="li_bloque">
+							<label class="etiquetas_bloque" for="calle_municipio">Municipio</label>
+							<select name="calle_municipio" class="select_bloque">
+								<option value="tlalnepantla">Tlalnepantla</option>
+								<option value="naucalpan">Naucalpan</option>
+								<option value="miguel_hidalgo">Miguel Hidalgo</option>
+								<option value="azcapotzalco">Azcapotzalco</option>
+							</select>
+						</li>
+						<li class="li_bloque">
+							<label class="etiquetas_bloque" for="calle_ciudad">Ciudad/Población</label>
+							<input class="inputs_bloque" type="text" placeholder="Ciudad/Población" />
+						</li>
+					</ul>
+				</div>
 			</div>
-
 		</article>
 		<article class="bloque">
 			<div class="titulo_bloque">
-				Foto
-			</div>
-			<div class="caja_bloque">
-				Campos
+			</div>		
+			<div class="caja_foto">
+				<figure class="foto">
+					<img src="images/foto.png" alt="foto" />
+				</figure>
 			</div>
 		</article>
 	</section>
